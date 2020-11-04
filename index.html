@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Lot Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/mainCss.css">
+</head>
+<body>
+    <div class="container">
+        <div class="headTittle">
+            <h1>Parking Lot Management</h1>
+        </div>
+        <div class="bodyClass">
+            <div id="fields">
+                <h3>Add New Car to Parking Lot</h3>
+                <div id="inputFields">
+                    <label>Owner:</label><br>
+                    <input type="text" id="owner" placeholder="John Smith"><br><br>
+                    <label>Car Model:</label><br>
+                    <input type="text" id="carModel" placeholder="Ford"><br><br>
+                    <label>Plates Number:</label><br>
+                    <input type="text" id="numPlates" placeholder="RAD 201 C"><br><br>
+                    <label>Check In/Out:</label><br>
+                    <input type="date" id="inDate">
+                    <input type="date" id="outDate"><br><br>
+                    <div id="msgField"></div>
+                    <button type="submit" id="btnCar">Add Car</button>
+                </div>
+            </div>
+        </div>
+        <div class="result">
+            <div class="listTittle">
+                <h3>list of cars in parking</h3>
+            </div>
+            <div id="searchbox">
+                <input type="search" id="searchBox" placeholder="Search..."> 
+                <button id="btnSearch"><i class="fa fa-search"></i></button>
+            </div>
+            <div class="listItems">
+                <table id="itemTable">
+                    <th>Owner</th>
+                    <th>Car</th>
+                    <th>Licence Plate</th>
+                    <th>Entry Date</th>
+                    <th>Exit Date</th>
+                    <th>Actions</th>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./js/mainJs.js"></script>
+</body>
+</html>
